@@ -11,15 +11,15 @@ import org.junit.jupiter.api.Test;
 import org.nasdanika.html.model.app.gen.ActionSiteGenerator;
 import org.nasdanika.ncore.util.SemanticInfo;
 
-public class TestArchitectureSiteGenerator {
+public class TestActionSiteGenerator {
 	
 	@Test
 	public void generateActionSite() throws Exception {
 		//new DrawioSemanticMappingGeneratorRefactored().generate();
 
-		URI actionModelURI = URI.createFileURI(new File("../demo-action-site/model/actions.yml").getAbsolutePath());
+		URI actionModelURI = URI.createFileURI(new File("../demo-action-site/actions.yml").getAbsolutePath());
 			
-		String pageTemplateResource = "../demo-action-site/model/page-template.yml";
+		String pageTemplateResource = "../demo-action-site/page-template.yml";
 		URI pageTemplateURI = URI.createFileURI(new File(pageTemplateResource).getAbsolutePath());//.appendFragment("/");
 		
 		String siteMapDomain = "https://docs.nasdanika.org/demo-action-site";
